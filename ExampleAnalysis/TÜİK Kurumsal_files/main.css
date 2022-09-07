@@ -1,0 +1,1861 @@
+@keyframes tuik-fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .95;
+  }
+}
+
+.tuik-is-2 {
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+.tuik-is-3 {
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
+.tuik-is-4 {
+  width: 4rem !important;
+  height: 4rem !important;
+}
+
+.tuik-is-5 {
+  width: 5rem !important;
+  height: 5rem !important;
+}
+
+.tuik-is-6 {
+  width: 6rem;
+  height: 6rem;
+}
+
+.tuik-is-7 {
+  width: 7rem;
+  height: 7rem;
+}
+
+.tuik-is-8 {
+  width: 8rem;
+  height: 8rem;
+}
+
+.tuik-is-9 {
+  width: 9rem;
+  height: 9rem;
+}
+
+.tuik-is-10 {
+  width: 10rem;
+  height: 10rem;
+}
+
+.tuik-is-11 {
+  width: 11rem;
+  height: 11rem;
+}
+
+.tuik-is-12 {
+  width: 12rem;
+  height: 12rem;
+}
+
+.tuik-is-13 {
+  width: 13rem;
+  height: 13rem;
+}
+
+.tuik-is-14 {
+  width: 14rem;
+  height: 14rem;
+}
+
+.tuik-is-15 {
+  width: 15rem;
+  height: 15rem;
+}
+
+.tuik-is-15 {
+  width: 15rem;
+  height: 15rem;
+}
+
+.tuik-is-16 {
+  width: 16rem;
+  height: 16rem;
+}
+
+.tuik-is-17 {
+  width: 17rem;
+  height: 17rem;
+}
+
+.tuik-is-18 {
+  width: 18rem;
+  height: 18rem;
+}
+
+.tuik-is-19 {
+  width: 19rem;
+  height: 19rem;
+}
+
+.tuik-is-20 {
+  width: 20rem;
+  height: 20rem;
+}
+
+.tuik-is-21 {
+  width: 21rem;
+  height: 21rem;
+}
+
+.tuik-is-22 {
+  width: 22rem !important;
+  height: 22rem !important;
+}
+
+.tuik-if-white {
+  fill: white !important;
+}
+
+.tuik-if-dark {
+  fill: #373535 !important;
+}
+
+.tuik-if-blue {
+  fill: #1b81a0 !important;
+}
+
+.tuik-if-red {
+  fill: #b13032 !important;
+}
+
+.tuik-if-milk {
+  fill: #f7f7f7 !important;
+}
+
+.tuik-bg-dark {
+  background-color: #373535;
+}
+
+.tuik-bg-red {
+  background-color: #b13032;
+}
+
+.tuik-bg-blue {
+  background-color: #1b81a0;
+}
+
+.bg-tuik-dark {
+  background-color: #373535;
+}
+
+.bg-tuik-red {
+  background-color: #b13032;
+}
+
+.bg-tuik-blue {
+  background-color: #1b81a0;
+}
+
+.bg-tuik-1 {
+  background-color: #373535;
+}
+
+.bg-tuik-2 {
+  background-color: #1b81a0;
+}
+
+.bg-tuik-3 {
+  background-color: #b13032;
+}
+
+.bg-tuik-r1 {
+  background-color: orange;
+}
+
+.bg-tuik-r2 {
+  background-color: #b13032;
+}
+
+.bg-tuik-r3 {
+  background-color: #373535;
+}
+
+.border-tuik-light {
+  border-color: #e2e2e2;
+}
+
+.border-tuik-dark {
+  border-color: #373535;
+}
+
+.tuik-shadow-light {
+  -webkit-box-shadow: 20px 20px 30px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 20px 20px 30px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 20px 20px 30px 1px rgba(0, 0, 0, 0.25);
+}
+
+.tuik-link {
+  text-decoration: none;
+  color: #1b81a0 !important;
+}
+
+.tuik-link:hover {
+  color: #b13032 !important;
+}
+
+.tuik-link-red {
+  text-decoration: none;
+  color: #b13032 !important;
+}
+
+.tuik-link-red:hover {
+  color: #1b81a0 !important;
+}
+
+.tuik-link-white {
+  text-decoration: none;
+  color: white !important;
+}
+
+.tuik-link-white:hover {
+  color: #b13032 !important;
+}
+
+.tuik-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tuik-tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 2;
+  width: 120px;
+  bottom: calc(100% + 2px);
+  left: 50%;
+  margin-left: -100px;
+}
+
+.tuik-tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tuik-hover-1:hover {
+  background-color: #f7f7f7 !important;
+  border: 1px solid #e2e2e2 !important;
+}
+
+.tuik-hover-2:hover {
+  -webkit-box-shadow: 20px 20px 30px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 20px 20px 30px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 20px 20px 30px 1px rgba(0, 0, 0, 0.25);
+}
+
+/**
+ * Basic typography style for copy text
+ */
+html {
+  font-size: 62.5%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.text-tuik-blue {
+  color: #1b81a0 !important;
+}
+
+.text-tuik-red {
+  color: #b13032 !important;
+}
+
+.text-tuik-dark {
+  color: #373535 !important;
+}
+
+.text-tuik-milk {
+  color: #f7f7f7 !important;
+}
+
+.tuik-fs-100 {
+  font-size: 1rem !important;
+}
+
+.tuik-fs-120 {
+  font-size: 1.2rem !important;
+}
+
+.tuik-fs-140 {
+  font-size: 1.4rem !important;
+}
+
+.tuik-fs-160 {
+  font-size: 1.6rem !important;
+}
+
+.tuik-fs-180 {
+  font-size: 1.8rem !important;
+}
+
+.tuik-fs-200 {
+  font-size: 2rem !important;
+}
+
+.tuik-fs-220 {
+  font-size: 2.2rem !important;
+}
+
+.tuik-fs-280 {
+  font-size: 2.8rem !important;
+}
+
+.tuik-fs-400 {
+  font-size: 4rem !important;
+}
+
+.tuik-fs-450 {
+  font-size: 4.5rem !important;
+}
+
+.tuik-fs-500 {
+  font-size: 5rem !important;
+}
+
+.tuik-display-3 {
+  font-size: 3rem !important;
+}
+
+.tuik-display-4 {
+  font-size: 4rem !important;
+}
+
+.tuik-display-5 {
+  font-size: 5rem !important;
+}
+
+.tuik-display-6 {
+  font-size: 6rem !important;
+}
+
+nav .dropdown-menu {
+  font-size: 1.6rem;
+  opacity: 0.98;
+  top: 37px;
+}
+
+nav .dropdown-item {
+  line-height: 30px;
+  margin: 5px 0;
+}
+
+nav .dropdown-item:hover {
+  background: #b13032;
+  color: white;
+}
+
+.menu-area {
+  position: static;
+}
+
+.mega-area {
+  position: absolute;
+  width: 95%;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.mega-area a {
+  white-space: normal;
+  line-height: 15px;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.mega-area h3 {
+  margin-top: 15px;
+  background-color: #f7f7f7 !important;
+  color: #4a505b !important;
+  font-weight: lighter !important;
+  padding: .5rem !important;
+  border: 1px solid #dee2e6;
+}
+
+.navbar {
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 992px) {
+  nav .dropdown-menu {
+    opacity: 1;
+    box-shadow: none !important;
+    background-color: transparent !important;
+  }
+  nav .dropdown-item {
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+    line-height: 1.8 !important;
+  }
+  .dropdown-menu-right {
+    margin-top: -10px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    font-size: 12px !important;
+  }
+  .mega-area {
+    width: 100% !important;
+  }
+  .mega-area svg {
+    width: 40px !important;
+    height: 40px !important;
+    padding: 0 !important;
+    margin: 0 25px !important;
+  }
+  .mega-area .dataPortalContainer-icon {
+    margin-top: 40px !important;
+  }
+  .mega-area .cbs-icon, .mega-area .dataPortal-icon {
+    width: 70px !important;
+    height: 80px !important;
+  }
+  .mega-area a {
+    font-size: 12px;
+  }
+  .mega-area .istatistik-ofis-logo {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-link {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  .dropdown-menu-right {
+    margin-top: -4px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-link {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+  }
+  .mega-area {
+    width: 95% !important;
+  }
+  .mega-area svg {
+    width: 70px !important;
+    height: 70px !important;
+    max-height: 100px !important;
+    padding: 10px !important;
+    margin: 0 17px 17px 17px !important;
+    display: inline-block;
+  }
+  .mega-area .cbs-icon, .mega-area .dataPortal-icon {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .mega-area a {
+    font-size: 14px;
+  }
+  .mega-area .istatistik-ofis-logo {
+    display: inline;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mega-area .istatistik-ofis-logo {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.mobile-menu .dropdown-item:focus {
+  background-color: #b13032;
+}
+
+.mobile-menu .dropdown-menu {
+  margin-top: 0;
+  padding: 0 10px;
+  border: none;
+  font-size: 14px !important;
+  margin: 0;
+}
+
+.mobile-menu .dropdown-menu a {
+  line-height: 14px;
+  color: #f7f7f7 !important;
+  font-weight: lighter;
+  white-space: normal;
+}
+
+.mobile-menu .dropdown-menu a:hover {
+  background-color: #b13032;
+}
+
+.mobile-menu .dropdown-menu .dropdown-toggle::after {
+  vertical-align: middle;
+  border-left: 4px solid;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+}
+
+.mobile-menu .dropdown-menu .dropdown .dropdown-menu {
+  left: 100%;
+  top: 0%;
+  margin: 0 20px;
+  border-width: 0;
+}
+
+.mobile-menu .dropdown-menu .dropdown .dropdown-menu.left {
+  right: 100%;
+  left: auto;
+}
+
+.mobile-menu .dropdown-menu > li.show {
+  background: #444242;
+  color: white;
+}
+
+.mobile-menu .dropdown-menu > li.show > a {
+  color: white;
+  font-weight: bold;
+  background: #444242;
+}
+
+.mobile-menu .nav-item a {
+  padding: 2px 0;
+}
+
+#search2 {
+  line-height: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  background: url("../img/bg_pattern_1.jpg");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+footer {
+  font-size: 1.6rem;
+}
+
+footer {
+  padding: 3rem 0 3rem 0;
+  font-size: 1.5rem;
+  color: #6c757d;
+  position: relative;
+  background: #373535;
+  /*tuik-social section*/
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 5rem;
+}
+
+footer ul li {
+  display: block;
+  line-height: 3rem;
+}
+
+footer h3 {
+  font-size: 21px;
+  color: #fefefe !important;
+  margin-bottom: 2rem;
+}
+
+footer a {
+  color: #6c757d;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: white !important;
+}
+
+footer a:hover img {
+  opacity: 1;
+}
+
+footer .tuik-social img {
+  width: 5rem !important;
+  height: 5rem;
+  opacity: 0.5;
+  margin-right: 1.6rem;
+}
+
+footer .tuik-cimer {
+  font-size: 15px !important;
+  color: #999 !important;
+  border: 1px solid #bbb;
+  border-radius: 1rem;
+  background: #e5e5e5;
+  border: none;
+  background: none;
+}
+
+footer .tuik-cimer img {
+  width: 70px !important;
+  height: 70px;
+  opacity: 0.2;
+}
+
+footer .copyright {
+  position: absolute;
+  bottom: 31px;
+  left: 0;
+  font-size: 1.2rem;
+  z-index: 999;
+  height: 20px;
+}
+
+.bg-footer {
+  background: url("https://data.tuik.gov.tr/static//img/bg_footer.svg") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  max-height: 150px;
+  min-height: 100px;
+  height: 150px;
+  bottom: 44px;
+}
+
+@media only screen and (max-width: 992px) {
+  footer {
+    text-align: center;
+  }
+  footer #cimerErisilebilirlikRow {
+    padding-top: 0;
+  }
+  footer #erisilebilirlik {
+    border: none !important;
+  }
+}
+
+@media only screen and (max-width: 556px) {
+  footer {
+    text-align: center;
+  }
+  footer #cimerErisilebilirlikRow {
+    padding-top: 5rem;
+  }
+}
+
+header {
+  font-size: 1.6rem;
+  height: 143px;
+  width: 100%;
+  background-color: #373535;
+}
+
+.header-container {
+  max-width: 1900px;
+}
+
+.header-logo {
+    width: 165px;
+    height: 110px;
+    left: 5px;
+    top: 15px;
+    background: url("../img/SVG/tuik_logo_white_tr.svg") no-repeat left;
+    background-size: contain !important;
+}
+
+.header-logo-en {
+    width: 165px;
+    height: 110px;
+    left: 5px;
+    top: 15px;
+    background: url("../img/SVG/tuik_logo_white_en.svg") no-repeat left;
+    background-size: contain !important;
+}
+
+.header-logo-dark {
+    background: url("../img/SVG/tuik_darklogo_wtr_right.svg") no-repeat left;
+}
+
+.header-logo-white {
+    background: url("../img/SVG/tuik_logo_white_tr.svg") no-repeat left;
+}
+
+.header-bg-right {
+  width: 200px;
+  height: 200px;
+  right: 20px;
+  bottom: 0;
+  background: url("../img/ataturk_black.png") no-repeat right;
+  background-size: contain;
+}
+
+.header-theme {
+  left: 285px;
+  bottom: 10px;
+  top: 10px;
+  width: 450px;
+  height: 123px;
+  background-position: bottom left;
+  background-size: contain !important;
+}
+
+.header-theme-statistics {
+  background-color: #373535;
+}
+
+.header-theme-statistics .header-theme {
+  background: url("https://data.tuik.gov.tr/static//img/SVG/formul_2.svg") no-repeat left;
+}
+
+.header-theme-agriculture {
+  background-color: green;
+}
+
+.header-theme-agriculture .header-theme {
+  background: url("https://data.tuik.gov.tr/static//img/SVG/USC_1006_Tarimsal_Alet_ve-Makine_Istatistikleri.svg") no-repeat left;
+}
+
+.search {
+  min-width: 300px;
+  width: 50%;
+  margin-right: 260px;
+}
+
+.header-additional {
+  height: 200px;
+  z-index: 0;
+  background: url("https://data.tuik.gov.tr/static//img/SVG/formul_2.svg"), #373535 !important;
+}
+
+.header-additional
+.apps-en {
+  background: url("https://data.tuik.gov.tr/static//img/bg_uygulama_en.svg") no-repeat right;
+}
+
+@media (max-width: 992px) {
+  header {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #mydiv {
+    background-color: white;
+  }
+}
+
+.apps {
+  background: url("https://data.tuik.gov.tr/static//img/bg_uygulama.svg") no-repeat right;
+}
+
+.apps .col-10 {
+  max-width: 970px;
+}
+
+.apps-item {
+  width: 170px;
+}
+
+.apps h6 {
+  font-size: 1.6rem;
+}
+
+.apps a:hover h6 {
+  color: #1b81a0;
+}
+
+.apps a:hover svg {
+  fill: #1b81a0 !important;
+}
+
+.tooltip-main {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-weight: 700;
+  background: #f3f3f3;
+  color: #737373;
+  margin: 4px 121px 0 5px;
+  float: right;
+  text-align: left !important;
+}
+
+.tooltip-qm {
+  float: left;
+  margin: -2px 0px 3px 4px;
+  font-size: 12px;
+}
+
+.tooltip-inner {
+  max-width: 236px !important;
+  height: 76px;
+  font-size: 12px;
+  padding: 10px 15px 10px 20px;
+  background: #FFFFFF;
+  color: #373535;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.tooltip.show {
+  opacity: .9;
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #f00;
+}
+
+@media (max-width: 768px) {
+  .apps {
+    background: none;
+  }
+  .apps-item {
+    width: 100px;
+  }
+}
+
+.btn-tuik-dark {
+  color: #fff;
+  background-color: #373535;
+  border-color: #373535;
+}
+
+.btn-tuik-dark:hover {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+
+.btn-tuik-red {
+  color: #fff;
+  background-color: #b13032;
+  border-color: #b13032;
+}
+
+.btn-tuik-red:hover {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+
+.btn-tuik-blue {
+  color: #fff;
+  background-color: #1b81a0;
+  border-color: #1b81a0;
+}
+
+.btn-tuik-blue:hover {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+
+.btn-tuik-light {
+  color: #373535;
+  background-color: #f7f7f7;
+  border-color: #e2e2e2;
+}
+
+.btn-tuik-light:hover {
+  color: #fff;
+  background-color: #c4c4c4;
+  border-color: #c4c4c4;
+}
+
+.tuik-hover-dark {
+  fill: #373535 !important;
+  color: #373535 !important;
+}
+
+.tuik-hover-dark:hover {
+  fill: #b13032 !important;
+  color: #b13032 !important;
+}
+
+.tuik-hover-red {
+  fill: #b13032 !important;
+  color: #b13032 !important;
+}
+
+.tuik-hover-red:hover {
+  fill: #373535 !important;
+  color: #373535 !important;
+}
+
+#indicatorsCarousel .indicator {
+  height: 140px;
+  z-index: 1;
+}
+
+#indicatorsCarousel .indicator:hover {
+  background-color: #b13032;
+  color: white;
+  cursor: pointer;
+}
+
+#indicatorsCarousel .indicator:hover svg {
+  fill: white !important;
+}
+
+#indicatorsCarousel .indicator:hover period {
+  color: #ccc;
+}
+
+#indicatorsCarousel .indicator:hover .fa-caret-down, #indicatorsCarousel .indicator:hover .fa-caret-up {
+  color: white !important;
+}
+
+#indicatorsCarousel .indicator-bg {
+  opacity: 0.05;
+}
+
+#indicatorsCarousel .indicator.active-indicators {
+  background-color: #b13032 !important;
+  color: white !important;
+  fill: white !important;
+  -webkit-box-shadow: 20px 20px 30px 1px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 20px 20px 30px 1px rgba(0, 0, 0, 0.27);
+  box-shadow: 20px 20px 30px 1px rgba(0, 0, 0, 0.27);
+}
+
+#indicatorsCarousel .indicator.active-indicators h6 {
+  color: white;
+}
+
+#indicatorsCarousel .indicator.active-indicators period {
+  color: #ccc !important;
+}
+
+#indicatorsCarousel .indicator.active-indicators svg {
+  fill: white !important;
+}
+
+#indicatorsCarousel .indicator.active-indicators .fa-caret-down, #indicatorsCarousel .indicator.active-indicators .fa-caret-up {
+  color: white !important;
+}
+
+#indicatorsCarousel .carousel-bg {
+  width: 800px;
+  height: 530px;
+}
+
+#indicatorsCarousel .carousel-inner {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#indicatorsCarousel .exchange-rate {
+  height: 25px;
+  border-top: 1px solid #e2e2e2;
+}
+
+#indicatorsCarousel ul {
+  list-style: none;
+  padding: 0 40px;
+}
+
+#indicatorsCarousel button {
+  min-width: 140px;
+}
+
+#indicatorsCarousel .carousel-indicators li {
+  background-color: #b13032;
+}
+
+#indicatorsCarousel period {
+  color: #777;
+}
+
+@media (max-width: 1199.98px) {
+  .indicator-graph-row {
+    margin-top: 180px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #indicatorsCarousel {
+    border: none !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #indicatorsCarousel .indicator {
+    background-color: #b13032 !important;
+    color: white !important;
+    fill: white !important;
+    height: 30px !important;
+  }
+  #indicatorsCarousel .indicator.active-indicators {
+    background-color: #9d2b2c !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  #indicatorsCarousel .indicator h6 {
+    color: white;
+    display: inline;
+    width: auto !important;
+  }
+  #indicatorsCarousel .indicator svg {
+    fill: white !important;
+  }
+  #indicatorsCarousel .indicator .fa-caret-down,
+  #indicatorsCarousel .indicator .fa-caret-up {
+    color: white !important;
+  }
+  #indicatorsCarousel .indicatorValue {
+    text-align: right !important;
+    padding-right: 5px !important;
+    bottom: 9px !important;
+  }
+  #indicatorsCarousel .indicator-col {
+    margin-bottom: 0 !important;
+  }
+}
+
+.tuik-corporate-cards {
+  min-height: 462px;
+  border-color: #e2e2e2;
+}
+
+.tuik-corporate-cards .nav-link {
+  background-color: #f7f7f7;
+  color: #373535;
+  height: 29px;
+  padding-top: 0.25rem;
+}
+
+.tuik-corporate-cards .nav-link.active {
+  background-color: #b13032 !important;
+}
+
+.tuik-corporate-cards .nav-link:hover:not(.active) {
+  color: #b13032;
+}
+
+.bulletinsSliderCard {
+  height: 500px;
+}
+
+.bulletinsSliderCard img {
+  height: 220px;
+}
+
+.bulletinsSliderCard .carousel-indicators li {
+  background-color: #b13032;
+}
+
+.bulletinsSliderCard .carousel-caption {
+  z-index: -1;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 70px !important;
+}
+
+.bulletinsSliderCard .image-container {
+  height: 220px;
+}
+
+.bulletinsSliderCard .carousel-control-next,
+.bulletinsSliderCard .carousel-control-prev {
+  width: 50%;
+  height: 220px;
+}
+
+.bulletinsSliderCard .carousel-inner {
+  overflow: hidden;
+}
+
+.bulletinsSliderCard svg {
+  width: 10rem !important;
+  height: 10rem !important;
+}
+
+@media (min-width: 1350px) {
+  .bulletinsSliderCard svg {
+    width: 10rem !important;
+    height: 10rem !important;
+  }
+}
+
+@media (min-width: 1500px) {
+  .bulletinsSliderCard svg {
+    width: 15rem !important;
+    height: 15rem !important;
+  }
+}
+
+#bulletinsSliderCard1 {
+  margin-left: 0px !important;
+  margin-right: 7.5px !important;
+  padding: 0 !important;
+}
+
+#bulletinsSliderCard2 {
+  margin-left: 7.5px !important;
+  margin-right: 7.5px !important;
+  padding: 0 !important;
+}
+
+.data-portal {
+  margin-left: 7.5px !important;
+  margin-right: 0px !important;
+  padding: 0 !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  #bulletinsSliderCard1 {
+    margin-left: 0px !important;
+    margin-right: 7.5px !important;
+    padding: 0 !important;
+  }
+  #bulletinsSliderCard2 {
+    margin-left: 7.5px !important;
+    margin-right: 0px !important;
+    padding: 0 !important;
+  }
+  .data-portal {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #bulletinsSliderCard1 {
+    margin-left: 15px !important;
+    margin-right: 7.5px !important;
+    padding: 0 !important;
+  }
+  #bulletinsSliderCard2 {
+    margin-left: 7.5px !important;
+    margin-right: 15px !important;
+    padding: 0 !important;
+  }
+  .data-portal {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #bulletinsSliderCard1, #bulletinsSliderCard2, .data-portal {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    padding: 0 !important;
+  }
+}
+
+#carousel-tabs-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #373535;
+}
+
+#carousel-tabs-container li {
+  float: left;
+}
+
+#carousel-tabs-container li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#carousel-tabs-container li a:hover, #carousel-tabs-container li a.active {
+  background-color: #b13032;
+}
+
+.carousel-with-tabs #carousel-tabs-container {
+  font-size: 14px;
+}
+
+.carousel-with-tabs .carousel {
+  top: 52px;
+  z-index: 1;
+}
+
+.carousel-with-tabs .carousel-tabs-container {
+  top: 0;
+}
+
+@media only screen and (max-width: 1800px) {
+  .date_and_category {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1650px) {
+  .kamuoyuBilgilendirmeItem, .duyuruItem {
+    line-height: 14px;
+    padding: 0;
+    border: none !important;
+    font-size: 14px;
+    padding-bottom: 0 !important;
+  }
+  .kamuoyuBilgilendirmeItem p, .duyuruItem p {
+    min-height: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .carousel-with-tabs {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+  #carousel-tabs-container {
+    font-size: 1rem !important;
+  }
+  #carousel-tabs-container a {
+    padding-top: 8px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #carouselKamuoyuBilgilendirme, #carouselDuyurular {
+    text-align: justify;
+  }
+  #carouselKamuoyuBilgilendirme .kamuoyuBilgilendirmeItem, #carouselKamuoyuBilgilendirme .duyuruItem, #carouselDuyurular .kamuoyuBilgilendirmeItem, #carouselDuyurular .duyuruItem {
+    padding: 0 !important;
+  }
+  #carouselKamuoyuBilgilendirme .col-lg-12, #carouselDuyurular .col-lg-12 {
+    padding: 0 !important;
+  }
+  #carouselKamuoyuBilgilendirme p, #carouselDuyurular p {
+    font-size: 12px !important;
+  }
+  .carousel-with-tabs {
+    margin: 45px 15px 30px 15px !important;
+  }
+}
+
+.pagination-dark a {
+  background: none;
+  color: #373535 !important;
+  background-color: transparent !important;
+}
+
+.pagination-dark a:hover {
+  background: rgba(55, 53, 53, 0.2);
+  background-color: rgba(55, 53, 53, 0.2) !important;
+  color: white !important;
+  border-color: rgba(55, 53, 53, 0.2);
+}
+
+.pagination-dark .active .page-link {
+  background: #a9abae;
+  border-color: #a9abae;
+}
+
+.pagination-dark .disabled span {
+  background-color: transparent !important;
+  color: #bbb !important;
+}
+
+.pagination-red a {
+  background: none;
+  color: #373535 !important;
+  background-color: transparent !important;
+}
+
+.pagination-red a:hover {
+  background: rgba(177, 48, 50, 0.2);
+  background-color: rgba(177, 48, 50, 0.2) !important;
+  color: white !important;
+  border-color: rgba(177, 48, 50, 0.2);
+}
+
+.pagination-red .active .page-link {
+  background: #b13032;
+  border-color: #b13032;
+}
+
+.pagination-red .disabled span {
+  background-color: transparent !important;
+  color: #bbb !important;
+}
+
+.pagination-outline-blue a {
+  background: none;
+  color: #373535 !important;
+  background-color: transparent !important;
+}
+
+.pagination-outline-blue a:hover {
+  background: #6f7c95;
+  background-color: #6f7c95 !important;
+  color: white !important;
+  border-color: #6f7c95 !important;
+}
+
+.pagination-outline-blue .active .page-link {
+  background: #6f7c95;
+  border-color: #6f7c95;
+}
+
+.pagination-outline-blue .disabled span {
+  background-color: transparent !important;
+  color: #bbb !important;
+}
+
+.svg-turkiye-haritasi {
+  text-align: center;
+}
+
+.svg-turkiye-haritasi svg {
+  width: 100%;
+  height: auto;
+}
+
+.il-isimleri {
+  position: absolute;
+  z-index: 999999999 !important;
+}
+
+.il-isimleri div {
+  font-family: Arial;
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  padding: 8px 16px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+#svg-turkiye-haritasi path {
+  cursor: pointer;
+  fill: #1b81a0;
+  stroke: white;
+  stroke-width: .2px;
+}
+
+#svg-turkiye-haritasi path:hover {
+  fill: #145e74;
+}
+
+.cbs {
+  margin-top: -97px;
+}
+
+.cbs a:hover h6 {
+  color: #373535 !important;
+}
+
+@media (max-width: 1700px) {
+  .cbs {
+    margin-top: -77px;
+    background-color: red;
+  }
+}
+
+@media (max-width: 1500px) {
+  .cbs {
+    margin-top: -62px;
+    background-color: red;
+  }
+}
+
+@media (max-width: 1300px) {
+  .cbs {
+    margin-top: -50px;
+    background-color: red;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cbs {
+    margin-top: -97px;
+    margin-right: 30px;
+    background-color: red;
+  }
+  .svg-turkiye-haritasi {
+    background-color: white;
+    border: 1px solid #dfdfdf;
+    margin-top: 30px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .svg-turkiye-haritasi {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+}
+
+#newest-six-bulletins {
+  position: relative;
+  height: 554px;
+  width: 100%;
+}
+
+#newest-six-bulletins date {
+  font-size: 26px;
+}
+
+#newest-six-bulletins .card a {
+  padding-top: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+     /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.social-dark {
+  color: #373535;
+}
+
+.social-dark:hover {
+  color: #b13032;
+}
+
+.social-red {
+  color: #b13032;
+}
+
+.social-red:hover {
+  color: #373535;
+}
+
+@media only screen and (max-width: 768px) {
+  #newest-six-bulletins {
+    margin-bottom: 50px !important;
+  }
+  #newest-six-bulletins .card-header {
+    font-size: 14px;
+  }
+  #newest-six-bulletins .card-header .fas,
+  #newest-six-bulletins .card-header p {
+    font-size: 16px !important;
+    line-height: 16px !important;
+  }
+  #newest-six-bulletins .card-body {
+    font-size: 14px;
+  }
+  #newest-six-bulletins date {
+    font-size: 20px !important;
+  }
+  
+}
+
+@media only screen and (max-width: 992px) {
+  
+  #newest-six-bulletins {
+    padding: 0 15px !important;
+  }
+  #newest-six-bulletins date {
+    font-size: 25px !important;
+  }
+}
+
+.bootstrap-form .form-check-label {
+  margin-left: 1rem;
+}
+
+.bootstrap-form input {
+  font-size: 1.6rem;
+}
+
+.bootstrap-form .btn {
+  font-size: 1.6rem;
+}
+
+.covid-table tr {
+  line-height: 24px;
+}
+
+.covid-table tr td {
+  padding: 10px 0 10px 10px;
+}
+
+.covid-table tr:nth-child(odd) {
+  background: #f7f7f7;
+}
+
+@media (max-width: 1300px) {
+  .covid-table tr {
+    font-size: 14px;
+  }
+  .covid-table .covid-toplam {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .covid-table {
+    margin-top: 5rem;
+  }
+}
+
+.covid-toplam .col-6:nth-child(n) {
+  padding: 10px;
+}
+
+.covid-toplam .col-6:nth-child(4n-2) {
+  background: #f7f7f7;
+  font-weight: bold;
+}
+
+.covid-toplam .col-6:nth-child(4n-3) {
+  background: #f7f7f7;
+}
+
+@media (min-width: 1200px) {
+  .covid-table {
+    margin-left: 15px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .covid-table {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+}
+
+.data-portal img {
+  height: 220px !important;
+}
+
+.data-portal .card-body {
+  height: 278px;
+  overflow-y: auto;
+}
+
+.corparate-container {
+  margin-top: 187px;
+}
+
+.corparate-side-menu {
+  width: 400px;
+}
+
+.corparate-content {
+  width: calc(100% - 415px);
+}
+
+.corparate-content .tuik-pdf {
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+}
+
+@media only screen and (max-width: 1550px) {
+  .navi-tab > div a.nav-item.nav-link.active:after {
+    border: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .corparate-container {
+    margin-top: 40px;
+  }
+  .corparate-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .corparate-container {
+    padding: 0 !important;
+  }
+  .corparate-content {
+    margin-left: 0 !important;
+  }
+  .corparate-content .timeline {
+    margin-top: 30px;
+  }
+  .corparate-content .tuik-pdf {
+    width: 100%;
+  }
+  .corparate-content .view {
+    box-shadow: none;
+  }
+  .corparate-content .view img {
+    box-shadow: 0px 0px 5px #aaa;
+  }
+  #menuWithSubArrow {
+    padding: 0 !important;
+  }
+  #menuWithSubArrow nav.navi-tab {
+    line-height: 0 !important;
+  }
+}
+
+.main-page {
+  max-width: 1900px;
+  margin-top: 20rem;
+}
+
+.sidebar {
+  width: 400px;
+  position: absolute;
+  right: 0;
+  z-index: 90;
+  top: 0;
+  right: 0;
+  transition: 0.5s;
+  padding: 0 20px 0 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.openCloseButton {
+  position: fixed;
+  /*top: 50px;*/
+  top: 30vh;
+  right: 0;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #373535;
+  color: white;
+  /*padding: 10px 15px;*/
+  padding: 45px 5px;
+  border: none;
+  background-color: #b13032;
+  z-index: 999;
+}
+
+.openCloseButton:hover {
+  background-color: #444;
+}
+
+a.corporate-link {
+  color: #de7070;
+}
+
+a.corporate-link:hover {
+  color: #b13032;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 70px;
+  right: 40px;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  color: #af1a1a;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  opacity: 0;
+}
+
+#back-to-top:hover {
+  color: #e85656;
+}
+
+#back-to-top.show {
+  opacity: 1;
+}
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.grow:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-box-shadow: 20px 20px 30px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 20px 20px 30px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 20px 20px 30px 1px rgba(0, 0, 0, 0.25);
+}
+
+.header-social {
+  padding: 0;
+  margin: 0;
+}
+
+.header-social li {
+  list-style: none;
+  float: left;
+}
+
+.header-social li a {
+  font-size: 20px;
+  color: #777;
+}
+
+.header-social li a:hover {
+  color: #b13032;
+}
+
+.corporate-item {
+  height: 488px;
+}
+
+.corporate-margin {
+  margin: 8px 10px 20px 10px;
+}
+
+.duyuru a {
+  color: #000;
+}
+
+.duyuru a:hover {
+  color: #1b81a0;
+}
+
+.multimedia-card {
+  border-radius: 5px;
+}
+
+.multimedia-card:hover {
+  border-radius: 10px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.4);
+}
+
+.all-news a {
+  color: #777;
+}
+
+.all-news a:hover {
+  color: #1b81a0;
+}
+
+#main {
+  transition: margin-right 0.5s;
+  padding: 0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+#kurumsalSidebar .row, #main .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+@media (max-width: 992px) {
+  .main-page {
+    margin-top: 3rem;
+  }
+  #main {
+    padding: 0 !important;
+  }
+}

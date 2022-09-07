@@ -1,0 +1,744 @@
+---
+title: "R ile Yeniden Türetilebilir Araştırmaya Giriş"
+author: "Emrah Er"
+date: "08/09/2022"
+institute: "AÜSBF"
+format:
+  revealjs:
+    incremental: false   
+    theme: default
+    # logo: "images/logo.png"
+    # footer: "Footer text"
+    transition: slide
+    background-transition: fade
+    transition-speed: fast
+    slide-number: true
+    show-slide-number: all
+    menu: true
+    chalkboard: true
+    progress: true
+execute:
+  cache: true
+---
+
+##  `r emo::ji("wave")` Emrah Er
+
+::: {.incremental}
+- **Ar. Gör.**, _AÜSBF İktisat_
+
+
+- **Lisans**, _Anadolu Üniversitesi_
+
+
+- **Yüksek Lisans**, _Ankara Üniversitesi_ ve _NC State University_
+
+
+- **Doktora**, _Kansas State University_ 
+    - "Applications of Machine Learning to Agricultural Land Values: Prediction and Causal Inference"
+
+- **İletişim:** **_eer [at] politics.ankara.edu.tr_**
+:::
+
+---
+
+<h1>
+<center>
+**Replicable** (*Tekrarlanabilir*) <br> vs <br> **Reproducible** <br> (*Yeniden Türetilebilir*)
+
+
+
+## Replicable vs Reproducible
+
+* Bilimsel sürecin kritik bir bileşeninin veri analizlerinin yeniden türetilebilmesi olduğu kabul edilmektedir. 
+
+
+* Eğer ham verilerden hareketle yayınlanmış çalışmadaki tüm hesaplamaları, tabloları, grafikleri, vs. türeten bir yönerge (kod cinsinden olabilir) varsa çalışma yeniden türetilebilirdir denir. 
+
+## Replicable vs Reproducible
+
+* Bir çalışmanın yeniden türetilebilir olması, tekrarlanabilir olduğu anlamına gelmez. 
+
+* Tekrarlanabilirlik, yeniden türetilebilirlikten daha güçlüdür.
+
+
+## [Replicable vs Reproducible](https://www.researchgate.net/figure/Distinguishing-reproducibility-and-replicability-Each-panel-depicts-the-requirements-for_fig1_324735314)
+
+![](https://www.researchgate.net/profile/Elaine-Toomey-2/publication/324735314/figure/fig1/AS:664559996125187@1535454858742/Distinguishing-reproducibility-and-replicability-Each-panel-depicts-the-requirements-for.png)
+
+## Replicable vs Reproducible
+
+* [I4R](https://twitter.com/I4Replication?s=20&t=GzMy_aoR9IGc7OZEZxu8jA)
+* [ReplicationWiki](http://replication.uni-goettingen.de/wiki/index.php/Main_Page)
+* [OSF](https://www.cos.io/)
+* [The Replication Network](https://replicationnetwork.com/)
+* [AER Data Editor](https://aeadataeditor.github.io/)
+* [JAE Data Archive](http://qed.econ.queensu.ca/jae/)
+
+# Neden "Yeniden Türetilebilirlik"?
+
+## [Neden "Yeniden Türetilebilirlik"?](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/bes2.1801)
+
+* Araştırmacıların analizleri nasıl ve neden gerçekleştirdiklerini hatırlamalarına yardımcı olur. 
+
+* İşbirlikçilere (ortak yazarlar) ve hakemlere çalışmanın daha kolay açıklanmasını sağlar.
+
+* İşbirlikçilerin ek analizleri daha hızlı ve daha verimli bir şekilde yürütmesini sağlar.
+
+## Neden "Yeniden Türetilebilirlik"?
+
+* Araştırmacıların analizleri ve grafikleri hızlı ve basit bir şekilde değiştirmesini sağlar. 
+
+* Bir şekil veya bir tabloyu yeniden oluşturmak için saatler harcamak yerine, bir kod satırındaki bir değeri değiştirmek veya bir komut dosyasını yeniden çalıştırmak yeterli olur.
+
+## Neden "Yeniden Türetilebilirlik"?
+
+* Bilim yinelemeli bir süreçtir ve aynı görevlerin çoğu tekrar tekrar gerçekleştirilir. 
+
+* Benzer görevleri gerektiren yeni projeler, önceden yürütülen araştırma görevlerinin hızlı bir şekilde yeniden yapılandırılması ile çok daha basit ve kolay hale gelir. 
+
+* Araştırmayı bu şekilde yürütmek, araştırmacıların önceki materyalleri (örneğin analiz kodu, dosya organizasyon sistemleri) yeniden kullanmalarını sağlar.
+
+## Neden "Yeniden Türetilebilirlik"?
+
+* Bilimsel araştırmalarda titizlik, güvenilirlik ve şeffaflık konusunda diğer araştırmacılar için güçlü bir göstergedir. 
+
+* Hakemlerin bir makalede açıklanan analitik sürece doğrudan erişebilmelerini sağlar dolayısıyla hakem incelemesinin kalitesini ve hızını artırır. 
+
+* Hakemler metodolojik soruları yazarlara sormadan cevaplayabilir, yazarların analizleri açıklandığı gibi doğru bir şekilde gerçekleştirdiğinden emin olmak için kodun metninde açıklanan yöntemlerle eşleşip eşleşmediğini kontrol edebilirler. 
+
+## Neden "Yeniden Türetilebilirlik"?
+
+* Hakem incelemesi sürecinde hataların yakalanma olasılığını artırarak düzeltme veya geri çekme olasılığını azaltır. 
+
+* Araştırmacıların hileli kod ve verileri araştırma topluluğunun geri kalanıyla açıkça paylaşmaları pek olası olmadığından, araştırmacıları analitik hatalardan kaynaklanan araştırma suistimali suçlamalarından da korur.
+
+## Neden "Yeniden Türetilebilirlik"?
+
+* Alıntı oranlarını artırır.
+
+* Diğer araştırmacıların yayınlara ek olarak kod ve verilerden alıntı yapmalarına olanak tanır.
+
+* Araştırmacılar bir makaledeki kodu benzer yöntemlerle yeniden kullanabilir ve verilerini orijinal makaleyle aynı şekilde düzenleyebilir ve daha sonra makalelerinde orijinal makaleden kod alıntılayabilirler.
+
+## Neden "Yeniden Türetilebilirlik"?
+
+* Başkalarının sizden öğrenmesini sağlar. Verilere ve kodlara erişme izin vermek, diğer araştırmacılara benzer analizleri gerçekleştirme konusunda avantaj sağlar. 
+
+* Başkalarının verilere ve koda erişmesine izin vermek, onlara çalışmayı eleştirel bir şekilde analiz etme şansı verir; bu, ortak yazarların veya hakemlerin revizyon sürecinde hataları keşfetmesine veya diğer bilim adamlarının yayından sonra hataları keşfetmesine yol açabilir. 
+
+## [Literate Programming](https://www-cs-faculty.stanford.edu/~knuth/lp.html) 
+
+* Okuryazar Programlama, 1984 yılında Donald Knuth tarafından geliştirilen bir programlama paradigmasıdır. 
+
+* Yaklaşım, bilimsel hesaplamada ve veri biliminde yeniden türetilebilir araştırma ve açık erişim amaçları için rutin olarak kullanılmaktadır.
+
+* Okuryazar Programlama, aynı belgede eşanlı olarak veri analizi yapmak ve yapılan analizi açıklamak için kodların ve tanımlayıcı yazının karıştırılmasıdır.
+
+# Unix
+
+- [Komut Satırı](https://tr.wikipedia.org/wiki/Komut_sat%C4%B1r%C4%B1)
+- [Some Basic UNIX Commands](https://www.tjhsst.edu/~dhyatt/superap/unixcmd.html)
+- [Herkesin Bilmesi Gereken Linux Komutları – 35 Temel Linux Komutu](https://www.hostinger.web.tr/rehberler/linux-komutlari)
+
+
+# R - [CRAN](https://cran.r-project.org/)
+
+* [Project Oriented Workflow - Jenny Bryan](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
+    - `setwd()`
+    - `rm(list = ls())`
+    - `here::here()`
+
+# [posit](https://posit.co/) & [RStudio](https://www.rstudio.com/)
+
+## Markdown
+
+* Markdown, 'markup' dillerinin basitleştirilmiş bir versiyonudur. 
+
+* Markdown ile yazılmış metinler basit ve sezgisel biçimlendirme öğelerini kullanırlar. 
+
+* Hızla akademisyenler, bilim adamları, yazarlar ve daha birçokları için yazma standardı haline gelmiştir. 
+
+## Markdown
+
+* GitHub ve reddit gibi bazı popüler web siteleri yorum kısımlarında Markdown'ı kullanır.
+
+* Markdown'da metin biçimlendirmek çok hafif bir öğrenme eğrisine sahiptir. 
+
+* Yazı tipi boyutunu, rengini veya türünü değiştirmek gibi işlemler yapılamaz. 
+
+* Markdown'da, başlıklar ve listeler oluşturmak gibi basit işlemler yapılabilir.
+
+## Markdown Temelleri - İtalik ve Kalın Yazı Tipi
+
+* Markdown'da bir kelimeyi/cümleyi italik yapmak için kelime/cümle altçizgi (`_`) veya yıldız (`*`) işaretleri arasında yazılır. 
+
+    * Örneğin: _bu_ (`_bu_`) italik olacaktır.
+
+* Benzer biçimde kalın yazı tipi yapmak için de çift altçizgi (`__`) veya çift yıldız ( `**` ) kullanılır. 
+
+    * Örneğin: **bunun** ( `**bunun**` ) gibi.
+
+
+## Markdown Temelleri - İtalik ve Kalın Yazı Tipi
+
+* Genellikle italik için tek altçizgi, kalın yazı tipi için de çift yıldız kullanılır.
+
+* Çift yıldız ve altçizgi (`**_`) kullanarak kelimleri/cümleleri kalın italik şekilde yazabiliriz. 
+
+    * Örneğin: **_bağzı kelimeler_** (`**_bağzı kelimeler_**`) gibi.
+
+* Yıldızların ve altçizgilerin hangi sırada kullanıldığı önemli değildir ancak önce yıldız sonra altçizgi kullanılması metni okumayı kolaylaştırır.
+
+## Markdown Temelleri - Başlıklar
+
+* Markdown'da 6 farklı seviyede başlık türü vardır:
+
+```
+# Markdown
+## Başlıklar
+### Başlık üç
+#### Başlık dört
+##### Başlık beş
+###### Başlık altı
+```
+
+* Markdown'da başlık yapmak için başlık olmasını istediğiniz metnin önüne kare/diyez (`#`) işareti koymalısınız. 
+
+## Markdown Temelleri - Bağlantılar
+
+* _Satır içi_ bağlantı yaratmak için bağlantı metnini köşeli parantezler (`[ ]`) içine sonrasında bağlantı adresini de parantezler (`( )`) içine yerleştirmelisiniz. 
+
+* Örneğin: Bağlantı metninde 'Mülkiye!' yazan ve tıklandığında SBF anasayfasına (http://www.politics.ankara.edu.tr/) giden bir bağlantı oluşturmak için Markdown'da [Mülkiye!](http://www.politics.ankara.edu.tr/) (`[Mülkiye!](http://www.politics.ankara.edu.tr/)`) yazmalısınız.
+
+## Markdown Temelleri - Bağlantılar
+
+* Referans/atıf bağlantısı ise metinde başka bir noktaya referans vermek için kullanılır. 
+
+```
+* Bu [başka bir yere bağlantıdır][başka bir yer]
+
+* Bu ise [diğer bir yere bağlantıdır][diğer bir yer]
+
+* Bu tekrar [ilk bağlantıdır][başka bir yer]
+
+[başka bir yer]: https://github.com/
+[diğer bir yer]: https://www.google.com/
+```
+## Markdown Temelleri - Bağlantılar
+
+* Bu [başka bir yere bağlantıdır][başka bir yer]
+
+* Bu ise [diğer bir yere bağlantıdır][diğer bir yer]
+
+* Bu tekrar [ilk bağlantıdır][başka bir yer]
+
+[başka bir yer]: https://github.com/
+[diğer bir yer]: https://www.google.com/
+
+## Markdown Temelleri - Bağlantılar
+
+* Referans tipi bağlantı kullanmanın avantajı metinde aynı yere tekrar tekrar bağlantı veriliyorsa bu bağlantıların güncellenmesi gerekiyorsa kolaylık sağlamasıdır. 
+
+* Eğer [başka bir yer] bağlantısının GitHub değil de GitLab sitesine gitmesini istiyorsak sadece tek bir bağlantı adresini değiştirmemiz yeterlidir.
+
+
+## Markdown Temelleri - Resimler
+
+* Markdown'da resim eklemek bağlantı eklemeye çok benzer. 
+
+* Bağlantılar ve resimler arasındaki tek fark resimleri eklerken kodun önüne ünlem işareti (`!`) koyarız.
+
+* Satıriçi resim bağlantısı eklemek için önce ünlem işareti  (`!`), ardından köşeli parantez (`[ ]`) içerisinde resmin alt metni (resim başlığı olarak düşünebilirsiniz) ve son olarak da parantez (`( )`) içerisinde resmin bağlantısını yazmamız gerekir. 
+
+## Markdown Temelleri - Resimler
+
+* Örneğin, https://octodex.github.com/images/bannekat.png adresine satıriçi resim bağlantısı eklemek için aşağıdaki kodu yazabiliriz. 
+
+```
+![](https://octodex.github.com/images/bannekat.png)
+```
+
+![](https://octodex.github.com/images/bannekat.png)
+
+## Markdown Temelleri - Resimler
+
+* Referans resimler için de benzer bir yol izleriz.
+
+* Burada resimlerin `images` klasöründe yer alan dosyalar olduğuna dikkat edin.
+
+```
+![İlk Kurucu Baba][İlk Kurucu Baba]
+
+![İlk Kurucu Baba 2][İlk Kurucu Baba 2]
+
+[İlk Kurucu Baba]: ../../images/founding-father.jpg
+
+[İlk Kurucu Baba 2]:../../images/foundingfather_v2.png
+```
+
+## Markdown Temelleri - Resimler
+
+![İlk Kurucu Baba][İlk Kurucu Baba]
+
+## Markdown Temelleri - Resimler
+
+![İlk Kurucu Baba 2][İlk Kurucu Baba 2]
+
+[İlk Kurucu Baba]: ../../images/founding-father.jpg
+
+[İlk Kurucu Baba 2]: ../../images/foundingfather_v2.png
+
+## Markdown Temelleri - Listeler
+
+* Sırasız liste oluşturmak için listenin her bir elemanının önüne yıldız (`*`) ekleriz. Her liste elemanı yeni bir satırda olmalıdır. 
+
+* Örneğin, market listesi şu şekilde yazılabilir:
+
+```
+* Süt
+* Yumurta
+* Ekmek
+* Zeytin
+```
+
+## Markdown Temelleri - Listeler
+
+* Sırasız Liste:
+    * Süt
+    * Yumurta
+    * Ekmek
+    * Zeytin
+
+## Markdown Temelleri - Listeler
+
+* Sıralı listeler ise yıldız yerine sayı kullanılarak oluşturulur. 
+
+* Örneğin:
+
+```
+1. Domates
+1. Biber
+1. Patlıcan
+4. Kabak
+```
+
+## Markdown Temelleri - Listeler
+
+* Sıralı Liste:
+    1. Domates
+    1. Biber
+    1. Patlıcan
+    4. Kabak
+    
+#  RMarkdown
+
+## Sweave, knitr, RMarkdown
+
+* [Sweave](https://en.wikipedia.org/wiki/Sweave)
+
+* [knitr](https://en.wikipedia.org/wiki/Knitr)
+
+* [RMarkdown](https://rmarkdown.rstudio.com/) 
+
+* [Quarto](https://quarto.org/)
+
+* [Diğer](https://en.wikipedia.org/wiki/Literate_programming#Literate_programming_practices)
+
+    * [Stata](https://www.stata.com/features/overview/markdown/)
+
+
+## RStudio ile Markdown Örneği
+
+* RStudio'da Markdown dosyaları özelleştirilmiş dosyalardır ve RMarkdown dosyaları olarak adlandırılır. 
+
+* RStudio'da RMarkdown dosyası yaratmak için **File > New File > R Markdown** seçeneğini seçin.
+
+
+## RStudio ile Markdown Örneği
+
+* Menüde sol kısımda bulunan seçeneklerden **Document** seçeneğini seçin. Sağ tarafta yer alan kısımlardan **Title** oluşturmak istediğiniz dökümanın başlığını, **Author** ise dökümanın yazarını gösterir. Bunları değiştirebilirsiniz. Sağ tarafta **HTML**, **PDF** ve **Word** olmak üzere 3 farklı seçenek bulunmaktadır. Bunlar R Markdown dökümanınızı işlediğinizde (render) üretilecek çıktı dosyasının türünü gösterir. Bu aşamada **HTML** seçeneğini seçebilir ve **OK**'e tıklayabilirsiniz.
+
+## RStudio ile Markdown Örneği
+
+* **OK**'e tıkladığınızda RStudio'da yeni bir dosya açılacaktır. 
+* RStudio otomatik olarak bu dosyayı bazı metinler ile doldurur. 
+* Dosyanın ilk 6 satırında **YAML** Metadata yer alır. 
+* Bu bilgiler R Markdown dosyasına ait bilgileri içerir. 
+
+## RMarkdown
+
+* Biraz önce oluşturduğumuz döküman gibi hem Markdown hem de R kodu içeren dökümanlar RMarkdown olarak adlandırılır. 
+
+* `rmarkdown` ise RMarkdown belgeleri ile çalışmayı kolaylaştıran bir R paketidir.
+
+* RStudio'da yer alan 'Knit' butonu tıklatıldığında `.Rmd` dosyası `knitr` paketine beslenir ve `knitr` belge içindeki tüm R kodlarını çalıştırarak bir Markdown (`.md`) dosyası yaratır. 
+
+## RMarkdown
+
+* Bu dosya yazdığınız metin ile birlikte yazılan kodları ve kodların çalıştırılması sonucu elde edilen grafik veya tablo gibi özetleri içerir. En son olarak bu markdown dosyası `pandoc` adı verilen bir yazılımla istenilen formata (pdf, html, word) dönüştürülür.
+
+![RMarkdown Akışı](../../images/RMarkdownFlow.png)
+
+## Kod Parçaları (Code Chunks)
+
+RStudio'da kod parçası yaratıp metne yerleştirmenin 3 farklı yolu vardır:
+
+1. Kod parçası başlatmak için `` ```{r} ``, bitirmek için ise ` ``` ` yazmak 
+2. **Ctrl + Alt + I** kısayolunu kullanmak
+3. **Add Chunk** butonuna tıklamak
+
+## Kod Parçaları (Code Chunks)
+
+Aşağıda yer alan komutları RMarkdown dökümanına yazdığımızda bu bir kod parçası olacaktır. 
+
+````
+```{r}`r ''`
+summary(pressure)
+```
+````
+
+Metin **knit** edildiğinde ise bu kod parçası aşağıdaki şekilde gözükecektir.
+
+```{r}
+#| echo: true
+summary(pressure)
+```
+
+## Grafikler
+
+Grafikler de benzer biçimde kod parçaları ile üretilebilir.
+
+```{r}
+plot(pressure)
+```
+
+## Satıriçi Hesaplamalar
+
+Yazdığınız kodun ürettiği sonuçları satıriçinde de kullanabilirsiniz. Örneğin, x ve y gibi 2 rassal sayı oluşturup bunları metin içinde kullanmak istersem, ilk olarak sayıları türeten kod parçasını yazarım.
+
+````
+```{r}`r ''`
+x <- rnorm(1)
+y <- rnorm(1)
+```
+````
+
+```{r}
+(x <- rnorm(1))
+(y <- rnorm(1))
+```
+
+Sonrasında ise `` `r
+x` `` ve `` `r
+y` `` yazarak bu iki sayıyı metin içinde kullanabilirim. Bu örnekte x = `r x` ve y = `r y`'dir.
+
+## Denklemler - $\LaTeX$
+
+* Denklemleri yazmak için kullanılması gerek farklı bir 'dil' vardır. [$\LaTeX$](https://tr.wikipedia.org/wiki/LaTeX) olarak adlandırılan bu dil ile denklemler ve formül yazmak çok kolaydır. 
+
+* Satıriçi denklem yazmak için 2 `$` işareti, blok denklem yazmak için ise 2 `$$` işareti kullanılır. 
+
+* Örneğin, $A = \pi*r^{2}$ (`$A = \pi*r^{2}$`) bir satıriçi denklemdir. 
+
+## Denklemler - $\LaTeX$
+
+$$
+\mathbb{E}[Y] = \beta_0 + \beta_1x
+$$
+
+```
+$$
+\mathbb{E}[Y] = \beta_0 + \beta_1x
+$$
+```
+ise bir blok denklemdir. 
+
+* $\LaTeX$ ile matematiksel ifadeleri yazma konusunda [bu sayfayı](https://en.wikibooks.org/wiki/LaTeX/Mathematics) inceleyebilirsiniz. Sayfada sıklıkla kullanılan denklemlerin ve Yunan harflerinin nasıl yazıldığını görebilirsiniz.
+
+## Görsel R Markdown
+Daha fazla bilgi için lütfen [Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/#/) sayfasına bakınız.
+
+# Akademik Yazım
+
+## Kaynakça
+
+* YAML'da `bibliography: references.bib`
+
+* [BibTeX](https://tr.wikipedia.org/wiki/Bibtex)
+
+* [Google Scholar](https://scholar.google.com/)
+
+## Atıflar
+
+* Atıf Stili için YAML'da `csl: nature.csl`
+
+* [Zotero Stil Kitaplığı](https://www.zotero.org/styles)
+
+## Atıflar
+
+* `Blah Blah [see @knuth1984, pp. 33-35; also @wickham2015, chap. 1]` 
+    - Blah Blah (see Knuth 1984, 33–35; also Wickham 2015, chap. 1)
+
+* `Blah Blah [@knuth1984, pp. 33-35, 38-39 and passim]` 
+    - Blah Blah (Knuth 1984, 33–35, 38–39 and passim)
+
+* `Blah Blah [@wickham2015; @knuth1984].` 
+    -Blah Blah (Wickham 2015; Knuth 1984).
+
+## Atıflar
+
+* `Wickham says blah [-@wickham2015]` 
+    - Wickham says blah (2015)
+
+* `@knuth1984 says blah.` 
+    - Knuth (1984) says blah.
+
+* `@knuth1984 [p. 33] says blah.` 
+
+    - Knuth (1984, 33) says blah.
+
+## Diğer
+
+* [Çapraz Referanslar](https://quarto.org/docs/authoring/cross-references.html)
+
+* [Scholarly Writing](https://quarto.org/docs/authoring/footnotes-and-citations.html)
+
+
+# Makale Örneği
+
+  * ExamplePaper
+  
+# Rapor Örneği
+
+  * ExampleAnalysis  
+  
+## Bookdown, Blogdown, vs.
+
+* [Bookdown](https://bookdown.org/)
+* [Blogdown](https://bookdown.org/yihui/blogdown/)
+* [Diğer Formatlar](https://rmarkdown.rstudio.com/formats.html)
+* [thesisdown](https://github.com/ismayc/thesisdown)
+
+# [Quarto](https://quarto.org/)
+
+## Quarto
+
+* [With Quarto Coming, is R Markdown Going Away? No.](https://yihui.org/en/2022/04/quarto-r-markdown/)
+
+* Quarto, Pandoc üzerine kurulu açık kaynaklı bir bilimsel ve teknik yayıncılık sistemidir.
+
+* Python, R, Julia ve Observable ile dinamik içerik oluşturabilirsiniz.
+
+* Belgeleri Markdown veya Jupyter not defterleri olarak yazabilirsiniz.
+
+* RMarkdown'un bir ileri versiyonu olarak düşünebiliriz.
+
+# RStudio ile Quarto Örneği
+
+## RStudio Quarto Eksiklikler
+
+* [UI gear](https://github.com/rstudio/rstudio/issues/11745)
+
+* [Chunk Options](https://yihui.org/knitr/options/)
+
+
+---
+
+```{r, out.width="50%", fig.align='center'}
+knitr::include_graphics("./images/git2.png")
+```
+
+---
+
+```{r, out.width="70%", fig.align='center'}
+knitr::include_graphics("./images/git1.png")
+```
+
+
+## Versiyon Kontrol Sistemleri
+
+- [Git](https://git-scm.com/)
+
+- [Subversion](https://subversion.apache.org/)
+
+```{r, out.width="40%", fig.align='center'}
+knitr::include_graphics("./images/gittreeexample.png")
+```
+
+---
+
+```{r, out.width="40%", fig.align='center'}
+knitr::include_graphics("./images/xkcd_git.png")
+```
+
+
+## Versiyon Kontrol Sistemleri
+
+- [GitHub](https://github.com/)
+
+
+- [Gitlab](https://about.gitlab.com/)
+
+
+- [Bitbucket](https://bitbucket.org/product)
+
+
+## Git'i kişiselleştirme
+Burada anlatılanlar bir kez yapılmalıdır. Tekrar tekrar yapılmasına gerek yoktur!
+
+```{r, eval=FALSE, echo=TRUE}
+install.packages("usethis")
+library(usethis)
+use_git_config(user.name = "Emrah Er", user.email = "eer@eremrah.com")
+```
+
+`user.name` kısmına kendi adınızı `user.email` kısmına Github'a üye olurken kullandığınız e-posta adresini yazınız.
+
+## Github'da yeni repo oluşturma
+* Github'a giriş yapın.
+* Yeşil "New Repository" butonuna tıklayın.
+   * myrepo
+   * Public
+   * "Initialize this repository with a README" tıklayın.
+   * Yeşil "Create repository" butonuna tıklayın.
+* "Code" butonundan HTTPS seçin ve adresi kopyalayın.
+
+## RStudio'da repoyu klonlama
+* File > New Project > Version Control > Git
+* Kopyaladığınız adresi yapıştırın.
+* Klasör adı belirleyin.
+* Klasörün nereye kaydedileceğini seçin.
+* "Open in new session" tıklayın ve "Create Project" seçin.
+
+## Değişiklik yapma, kaydetme, commit ve push
+* README.md dosyasının içeriğini değiştirin.
+* Kaydedin.
+* Git sekmesinden önce stage, sonra commit, en son olarak da push.
+* Github üzerinde yaptığınız değişikliği kontrol edin.
+
+## Değişiklikleri pull etme
+* Pull basit olarak eğer bir grup ile (bu kullandığınız 2 farklı bilgisayar da olabilir) çalışıyorsanız grubunuzun Github'a push ettiği değişiklikleri bilgisayarınıza indirmeye yarar. 
+* Github üzerinde README dosyasının içeriğini değiştirelim.
+* Git sekmesinden pull seçin.
+
+
+# [Reproducible Research Task View](https://cran.r-project.org/web/views/ReproducibleResearch.html)
+
+## R Package
+
+- [Packaging data analytical work reproducibly using R (and friends)](https://peerj.com/preprints/3192v2/)
+- [Sharing and organizing research products as R packages](https://link.springer.com/article/10.3758/s13428-020-01436-x)
+
+## Docker
+
+- [Docker](https://www.docker.com/)
+
+- [Docker for Data Science](https://dagshub.com/blog/setting-up-data-science-workspace-with-docker/)
+
+```{r, out.width="75%", fig.align='center'}
+knitr::include_graphics("./images/docker.jpg")
+```
+
+## [rocker](https://github.com/rocker-org/rocker)
+
+- [The Rockerverse: Packages and Applications for Containerisation with R](https://journal.r-project.org/archive/2020/RJ-2020-007/RJ-2020-007.pdf)
+
+- [mybinder](https://mybinder.org/)
+
+
+
+# Diğer Konular
+
+## Metin Editörleri
+
+
+- [Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell)
+
+- [Vim](https://bit.ly/32m7bwn) vs [Emacs](https://en.wikipedia.org/wiki/Emacs)
+
+- [Visual Studio Code](https://code.visualstudio.com/)
+
+- [Sublime Text](https://www.sublimetext.com/)
+
+---
+
+```{r, out.width="50%", fig.align='center'}
+knitr::include_graphics("./images/xkcd_regular_expressions.png")
+```
+
+## Regex & API
+
+* [Regex - Wikipedia](https://en.wikipedia.org/wiki/Regular_expression) 
+
+* [Regex](https://regexr.com/)
+
+* [API (Application Programming Interface)](https://en.wikipedia.org/wiki/API) / [Örnek: EVDS](https://evds2.tcmb.gov.tr/index.php?/evds/userDocs)
+
+* [Postman](https://www.postman.com/)
+
+---
+
+```{r, out.width="150%", fig.align='center'}
+knitr::include_graphics("./images/rtfm2.png")
+```
+
+## Nasıl Soru Sorulur ve Yardım Alınır?
+
+* En önemli ve ilk yapılması gereken: [RTFM](https://en.wikipedia.org/wiki/RTFM) ve [rtfm](https://eksisozluk.com/rtfm--33403)!
+
+* Cevaplar için aşağıdaki sayfaları kullanabilirsiniz.
+
+    * [RSeek](https://rseek.org/)
+    * [Google](google.com)
+    * [Github](https://github.com)
+    
+---
+
+```{r, out.width="100%", fig.align='center'}
+knitr::include_graphics("./images/so.png")
+```
+
+
+## Stack Overflow
+
+- Stack Overflow, profesyonel ve meraklı programcılar için bir soru-cevap sitesidir. 
+
+- Stack Exchange Network'ün amiral gemisidir.
+
+- [Stack Exchange Siteleri](https://stackexchange.com/sites#)
+
+## Nasıl Soru Sorulur ve Yardım Alınır?
+
+Aşağıdaki bağlantılar soru sorma konusunda faydalı olabilir.
+
+* [Nasıl Akıllıca Soru Sorulur?](https://www.getgnu.org/gnulinux/gnulinux-ipuclari/nasil-akillica-soru-sorulur.html)
+* [How to create a Minimal, Reproducible Example](https://stackoverflow.com/help/minimal-reproducible-example)
+* [How to make a great R reproducible example](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)
+* [FAQ: Tips for writing R-related questions](https://community.rstudio.com/t/faq-tips-for-writing-r-related-questions/6824)
+* [Get help!](https://www.tidyverse.org/help/)
+
+## Cheat Sheets
+
+* **Help** > **Cheat Sheets**
+
+* **Help** > **Markdown Quick Reference**
+
+* Bazı R paketleri ve RStudio için hazırlanan **kopya kağıtları** (cheatsheet) için de aşağıdaki siteyi inceleyebilirsiniz.
+
+    * [RStudio Cheatsheets](https://rstudio.com/resources/cheatsheets/)
+
+## Diğer
+
+* [r4ds](http://tr.r4ds.hadley.nz/)
+
+* [Library Genesis](http://libgen.rs/)
+
+* [Awesome Data Science](https://github.com/academic/awesome-datascience)
+
+
+* [Awesome Big Data](https://github.com/0xnr/awesome-bigdata)
+
+
+* [Every Awesome List on GitHub](https://app.polymersearch.com/discover/github-awesome)
+
+* [Financial Machine Learning and Data Science](https://github.com/firmai/financial-machine-learning)
